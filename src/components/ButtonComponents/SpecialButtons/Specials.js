@@ -1,4 +1,5 @@
 import React from "react";
+import makeID from "../../../maths";
 import SpecialButton from "./SpecialButton";
 //import any components needed
 import { specials } from "../../../data";
@@ -12,10 +13,11 @@ const Specials = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {specials.map(special => {
-        return <SpecialButton />;
+        return <SpecialButton spec={special} key={makeID(5)} />;
       })}
     </div>
   );
 };
 
 export default Specials;
+

@@ -1,9 +1,10 @@
 import React from "react";
+import makeID from "../../../maths";
 import OperatorButton from "./OperatorButton";
 //import any components needed
 import { operators } from "../../../data";
-//Import your array data to from the provided data file
 
+//Import your array data to from the provided data file
 const Operators = () => {
   // STEP 2 - add the imported data to state
   return (
@@ -16,6 +17,7 @@ const Operators = () => {
           <OperatorButton
             operation={operator.value}
             char={operator.char}
+            key={makeID(5)}
           />
         );
       })}
