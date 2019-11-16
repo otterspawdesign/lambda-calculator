@@ -1,7 +1,7 @@
 import React from "react";
 
 //import any components needed
-// example of import from data.js. Note all the ../   This is how we move through folders. 
+// example of import from data.js. Note all the ../   This is how we move through folders.
 /* 
 import { numbers } from '../../../data' 
 */
@@ -17,3 +17,4 @@ const Numbers = () => {
     </div>
   );
 };
+export default Numbers;
